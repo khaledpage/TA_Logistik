@@ -6,6 +6,7 @@ entity Books {
   title  : localized String;
   author : Association to Authors;
   stock  : Integer;
+  
 }
 
 entity Authors {
