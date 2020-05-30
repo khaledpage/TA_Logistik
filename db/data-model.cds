@@ -1,23 +1,23 @@
 namespace my.bookshop;
 using { User, Country, managed } from '@sap/cds/common';
 
-entity Books {
+entity Packets {
   key ID : Integer;
-  title  : localized String;
-  author : Association to Authors;
+  status  : String;
+  user : Association to Users;
   stock  : Integer;
+  note : String;
    
 }
 
-entity Authors {
+entity Users {
   key ID : Integer;
   name   : String;
-  books  : Association to many Books on books.author = $self;
+  vorname : String;
+  postzahl : String;
+  adresse : String;
+  email : String;
+  teleNummer : String;
+  packets  : Association to many Packets on packets.user = $self;
 }
 
-entity Orders : managed {
-  key ID  : UUID;
-  book    : Association to Books;
-  country : Country;
-  amount  : Integer;
-}
