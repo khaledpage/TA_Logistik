@@ -5,9 +5,9 @@
       "@source": "srv/cat-service.cds",
       "kind": "service"
     },
-    "CatalogService.Pakets": {
+    "CatalogService.Packets": {
       "kind": "entity",
-      "@cds.persistence.name": "CATALOGSERVICE_PAKETS",
+      "@cds.persistence.name": "CATALOGSERVICE_PACKETS",
       "query": {
         "SELECT": {
           "from": {
@@ -58,11 +58,7 @@
     },
     "CatalogService.Users": {
       "kind": "entity",
-      "@Capabilities.DeleteRestrictions.Deletable": false,
-      "@Capabilities.InsertRestrictions.Insertable": false,
-      "@Capabilities.UpdateRestrictions.Updatable": false,
       "@cds.persistence.name": "CATALOGSERVICE_USERS",
-      "@readonly": true,
       "query": {
         "SELECT": {
           "from": {
@@ -108,7 +104,7 @@
           "cardinality": {
             "max": "*"
           },
-          "target": "CatalogService.Pakets",
+          "target": "CatalogService.Packets",
           "on": [
             {
               "ref": [
@@ -196,7 +192,9 @@
       "kind": "entity",
       "@UI.Identification": [
         {
-          "=": "name"
+          "Value": {
+            "=": "name"
+          }
         }
       ],
       "@cds.autoexpose": true,
@@ -340,7 +338,9 @@
       "kind": "entity",
       "@UI.Identification": [
         {
-          "=": "name"
+          "Value": {
+            "=": "name"
+          }
         }
       ],
       "@cds.autoexpose": true,
@@ -490,7 +490,9 @@
       "kind": "entity",
       "@UI.Identification": [
         {
-          "=": "name"
+          "Value": {
+            "=": "name"
+          }
         }
       ],
       "@cds.autoexpose": true,
@@ -810,7 +812,9 @@
       "kind": "type",
       "@UI.Identification": [
         {
-          "=": "name"
+          "Value": {
+            "=": "name"
+          }
         }
       ],
       "@cds.autoexpose": true,
@@ -839,7 +843,9 @@
       "kind": "entity",
       "@UI.Identification": [
         {
-          "=": "name"
+          "Value": {
+            "=": "name"
+          }
         }
       ],
       "@cds.autoexpose": true,
@@ -968,7 +974,9 @@
       "kind": "entity",
       "@UI.Identification": [
         {
-          "=": "name"
+          "Value": {
+            "=": "name"
+          }
         }
       ],
       "@cds.autoexpose": true,
@@ -1103,7 +1111,9 @@
       "kind": "entity",
       "@UI.Identification": [
         {
-          "=": "name"
+          "Value": {
+            "=": "name"
+          }
         }
       ],
       "@cds.autoexpose": true,

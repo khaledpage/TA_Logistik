@@ -7,6 +7,7 @@ entity Packets {
   user : Association to Users;
   stock  : Integer;
   note : String;
+
    
 }
 
