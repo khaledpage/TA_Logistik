@@ -5,7 +5,7 @@ entity Packets {
   key ID : Integer;
   status  : String;
   user : Association to Users;
-  stock  : Integer;
+  stock  : String;
   note : String;
 
    

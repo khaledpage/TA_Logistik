@@ -42,7 +42,7 @@
         },
         "stock": {
           "@cds.persistence.name": "STOCK",
-          "type": "cds.Integer"
+          "type": "cds.String"
         },
         "note": {
           "@cds.persistence.name": "NOTE",
@@ -735,7 +735,7 @@
         },
         "stock": {
           "@cds.persistence.name": "STOCK",
-          "type": "cds.Integer"
+          "type": "cds.String"
         },
         "note": {
           "@cds.persistence.name": "NOTE",

@@ -17,7 +17,7 @@
         <Property Name="ID" Type="Edm.Int32" Nullable="false"/>
         <Property Name="status" Type="Edm.String"/>
         <NavigationProperty Name="user" Relationship="CatalogService.Packets_user" FromRole="Packets" ToRole="Users"/>
-        <Property Name="stock" Type="Edm.Int32"/>
+        <Property Name="stock" Type="Edm.String"/>
         <Property Name="note" Type="Edm.String"/>
         <Property Name="user_ID" Type="Edm.Int32"/>
       </EntityType>
